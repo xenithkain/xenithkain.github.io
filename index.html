@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cat Photo App</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <main>
+            <h3>Cat Photos</h3>
+            <p>Click the cat to see more cats!</p>
+            <a href="https://imgur.com/search?q=cats" target="_blank"><img src="https://i.imgur.com/mtbl1cr.jpeg" alt="a cat climbing a rock"></a>
+            <h3>Cat Lists</h3>
+            <div class="lists">
+                <!-- <em> tag is for italicizing-->
+                <p>Things cats <em>love:</em></p>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasanga</li>
+                </ul>
+                <img src="https://i.imgur.com/s7fQa1D.jpeg" alt="Lasanga on stovetop">
+                <!-- <strong> tag is for bolding -->
+                <p>Things cats <strong>hate:</strong></p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <img src="https://i.imgur.com/0LINzxs.jpeg" alt="Black cat hugging a spotted cat">
+            <form action="/submit-cat-photo">
+                <!-- 
+                 - using the same name in the input, puts them in a group
+                 - is best practice to add the for attribute to the <label> tag, that matches the id attribute of its associated <input> tag 
+                 - <br> tag is line break
+                 - could add the checked attribute to make a checkbox start checked
+                -->
+                <label for="indoor"> <input id="indoor" type="radio" name="indoor-outdoor"> indoor </label><br>
+                <label for="outdoor"> <input id="outdoor" type="radio" name="indoor-outdoor"> outdoor </label><br>
+
+                <label for="loving"><input id="loving" type="checkbox" name="personality">Loving</label><br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label><br>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality">Energetic</label><br>
+
+                <input type="text" placeholder="Cat photo url" required>
+                <button type="submit">Submit</button><br>
+            </form>
+        </main>
+        <footer>
+            <p>No copyright - XenithKain</p>
+        </footer>
+    </body>
+</html>
