@@ -2,11 +2,16 @@
 <html lang="en">
     <head>
         <title>Caleb Besser Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap" rel="stylesheet">
+
 
         <meta charset="UTF-8">
         <meta name="author" content="Caleb Besser">
         <meta name="description" content="This page is a portfolio for future employers to get a glimpse at what I am currently capable of.">
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" type="text/css">
         <link rel="icon" href="Assets/Images/Portfolio_Icon.png" type="image/x-icon">
     </head>
     <body>
@@ -14,10 +19,10 @@
             <div class="nav_bar_container">
                 <div class="nav_bar">        
                     <ul class="nav_bar_buttons no_bullets">
-                        <a class="link_no_style" href="#"><li class="nav_buttons"><div class="home icon"></div><span class="nav_bar_name">Home</span></li></a>
-                        <a class="link_no_style" href="#"><li class="nav_buttons"><div class="projects icon"></div><span class="nav_bar_name">Projects</span></li></a>
-                        <a class="link_no_style" href="#"><li class="nav_buttons"><div class="about icon"></div><span class="nav_bar_name">About</span></li></a>
-                        <a class="link_no_style" href="#"><li class="nav_buttons"><div class="contacts icon"></div><span class="nav_bar_name">Contacts</span></li></a>
+                        <a class="link_no_style" href="index.html"><li class="nav_buttons current_nav"><div class="home icon"></div><span id="Home_Text" class="nav_bar_name">Home</span></li></a>
+                        <a class="link_no_style" href="projects.html"><li class="nav_buttons"><div class="projects icon"></div><span class="nav_bar_name">Projects</span></li></a>
+                        <a class="link_no_style" href="about.html"><li class="nav_buttons"><div class="about icon"></div><span class="nav_bar_name">About</span></li></a>
+                        <a class="link_no_style" href="contacts.html"><li class="nav_buttons"><div class="contacts icon"></div><span class="nav_bar_name">Contacts</span></li></a>
                     </ul>
                     <p class="nav_bar_cr">&copy; XenithKain</p>
                 </div>
@@ -25,21 +30,19 @@
             
         </header>
 
-        <main>
+        <main class="main_page">
             <div class="main_page_div">
-                <div class="vertical_rounded">
+                <div class="rectangle_rounded" >
                 </div>
                 <div class="bio">
-                    <p class="bio_text">Caleb Besser, specialized in </p>
-                    <ul class="no_bullets skills_list">
-                        <li class="skills">Front/Backend Development</li>
-                        <li class="skills">Game Design</li>
-                    </ul>
+                    <p class="bio_text"><span class="bio_name">Caleb Besser<br></span>
+                        Loves <span style="font-weight:bolder; color: rgb(177, 219, 179);">developing ideas</span> and creating amazing things. Together with clients, brings their <span style="font-weight:bolder; color: rgb(177, 219, 179);">dreams into reality</span>!
+                    </p>
                 </div>
-                
+                <div class="bottom_page_arrow"></div>
             </div>
-
-        </main> 
             
+        </main> 
+        <script src="index.js"></script>
     </body>
 </html>
