@@ -33,6 +33,12 @@ main.main_page{
     justify-content: center;
     align-items: center;
 }
+header.main_page_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -241,6 +247,46 @@ div.bottom_page_arrow:hover{
     0 0 0 2px white,
     0.3em 0.3em 1em var(--MAINCOLOR2);
 }
+div.nav_bar_extender{
+    width: 2vw;
+    height: 4vw;
+    background-color: black;
+    border-top: 2px solid var(--MAINCOLOR1);
+    border-bottom: 2px solid var(--MAINCOLOR1);
+    border-right: 2px solid var(--MAINCOLOR1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 46vh;
+    align-self: end;
+    left: 20vw;
+    transition: transform .5s .1s;
+    z-index: 1;
+}
+div.nav_bar_extender_hamburger{
+    position: relative;
+    width: .3vw;
+    height: 2.5vw;
+    background-color: var(--MAINCOLOR2);
+    border-radius: 20px;
+    z-index: 2;
+}
+div.nav_bar_extender_hamburger::after,div.nav_bar_extender_hamburger::before{
+    position: absolute;
+    content: "";
+    width: .3vw;
+    height: 2.5vw;
+    border-radius: 20px;
+    background-color: var(--MAINCOLOR2);
+}
+div.nav_bar_extender_hamburger::after{
+    left: .5vw;
+}
+div.nav_bar_extender_hamburger::before{
+    right: .5vw;
+}
 div.about_page_content{
     background-color: rgba(240, 248, 255, 0.528);
     width: 25vw;
@@ -284,8 +330,13 @@ div.nav_bar{
     height: 100%;
     width:100%;
     background-color: black;
-    display:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     border-right: 2px solid var(--MAINCOLOR1);
+    transform: translateX(-20vw);
+    transition: transform .5s;
 }
 div.nav_bar_container{
     width:fit-content;
@@ -294,12 +345,6 @@ div.nav_bar_container{
     height: 100%;
     position: fixed;
     z-index: 1;
-}
-div.nav_bar_container:hover div.nav_bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 div.main_page_div{
     display: grid;

@@ -10,58 +10,62 @@
     <link rel="icon" href="Assets/Images/Portfolio_Icon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="nav_bar_container">
-            <div class="nav_bar">        
-                <ul class="nav_bar_buttons no_bullets">
-                    <a class="link_no_style" href="index.html"><li class="nav_buttons"><div class="home icon"></div><span class="nav_bar_name">Home</span></li></a>
-                    <a class="link_no_style" href="projects.html"><li class="nav_buttons current_nav"><div class="projects icon"></div><span class="nav_bar_name">Projects</span></li></a>
-                    <a class="link_no_style" href="about.html"><li class="nav_buttons"><div class="about icon"></div><span class="nav_bar_name">About</span></li></a>
-                    <a class="link_no_style" href="contacts.html"><li class="nav_buttons"><div class="contacts icon"></div><span class="nav_bar_name">Contacts</span></li></a>
+    <div class="nav_bar_container">
+        <div id="nav_bar" class="nav_bar">        
+            <ul class="nav_bar_buttons no_bullets">
+                <a class="link_no_style" href="index.html"><li class="nav_buttons"><div class="home icon"></div><span class="nav_bar_name">Home</span></li></a>
+                <a class="link_no_style" href="projects.html"><li class="nav_buttons current_nav"><div class="projects icon"></div><span class="nav_bar_name">Projects</span></li></a>
+                <a class="link_no_style" href="about.html"><li class="nav_buttons"><div class="about icon"></div><span class="nav_bar_name">About</span></li></a>
+                <a class="link_no_style" href="contacts.html"><li class="nav_buttons"><div class="contacts icon"></div><span class="nav_bar_name">Contacts</span></li></a>
+            </ul>
+            <p class="nav_bar_cr">&copy; XenithKain</p>
+            <div id="nav_bar_extender" class="nav_bar_extender" onclick="navBarExtenderButton('nav_bar', 'nav_bar_extender')"><div class="nav_bar_extender_hamburger"></div></div>
+
+        </div>
+    </div>
+
+    <main>
+
+        <section class="project_item">
+            <h2 class="project_title">Personal Project - Cell Invaders, Terminal Game</h2>
+            <div class="project_content">
+                <img class="rounded" src="Assets/Images/Cell_Invaders_1.PNG" alt="Picture of terminal based game, board size of 5x5 cells. The game is asking player to make a choice">
+                <h3>Description:</h3>
+                <p>
+                    Cell Invaders was a simple Terminal based game where you put units on the board, and they grow in size. You can spread them out,
+                    with the end goal of conquering the entire board. 
+                </p>
+                <h3>Skills:</h3>
+                <ul class="no_bullets">
+                    <li>C#</li>
+                    <li>Terminal Commands</li>
                 </ul>
-                <p class="nav_bar_cr">&copy; XenithKain</p>
+                <h3>Difficulty:</h3>
+                <p>★☆☆☆☆</p>
+                
             </div>
-        </div>
-        
-    </header>
-    <section class="project_item">
-        <h2 class="project_title">Personal Project - Cell Invaders, Terminal Game</h2>
-        <div class="project_content">
-            <img class="rounded" src="Assets/Images/Cell_Invaders_1.PNG" alt="Picture of terminal based game, board size of 5x5 cells. The game is asking player to make a choice">
-            <h3>Description:</h3>
-            <p>
-                Cell Invaders was a simple Terminal based game where you put units on the board, and they grow in size. You can spread them out,
-                with the end goal of conquering the entire board. 
-            </p>
-            <h3>Skills:</h3>
-            <ul class="no_bullets">
-                <li>C#</li>
-                <li>Terminal Commands</li>
-            </ul>
-            <h3>Difficulty:</h3>
-            <p>★☆☆☆☆</p>
-            
-        </div>
-    </section>
-    <section class="project_item">
-        <h2 class="project_title">Author Website</h2>
-        <div class="project_content">
-            <img class="rounded" src="Assets/Images/Xan_Webpage_Picture.PNG" alt="Picture of Xandré Sage's Author Website, Includes bio and picture of the author.">
-            <h3>Description:</h3>
-            <p>
-                Commisioned website made to the specification of the Author. Website is used for reaching out to fans, and giving information on the author.
-            </p>
-            <h3>Skills:</h3>
-            <ul class="no_bullets">
-                <li>HTML and CSS</li>
-                <li>Angular Framework</li>
-                <li>Javascript</li>
-                <li>Bringing to life the client's idea</li>
-            </ul>
-            <h3>Difficulty:</h3>
-            <p>★★☆☆☆</p>
-            
-        </div>
-    </section>
-    <script src="index.js"></script>
+        </section>
+        <section class="project_item">
+            <h2 class="project_title">Author Website</h2>
+            <div class="project_content">
+                <img class="rounded" src="Assets/Images/Xan_Webpage_Picture.PNG" alt="Picture of Xandré Sage's Author Website, Includes bio and picture of the author.">
+                <h3>Description:</h3>
+                <p>
+                    Commisioned website made to the specification of the Author. Website is used for reaching out to fans, and giving information on the author.
+                </p>
+                <h3>Skills:</h3>
+                <ul class="no_bullets">
+                    <li>HTML and CSS</li>
+                    <li>Angular Framework</li>
+                    <li>Javascript</li>
+                    <li>Bringing to life the client's idea</li>
+                </ul>
+                <h3>Difficulty:</h3>
+                <p>★★☆☆☆</p>
+                
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="index.js"></script>
 </body>
