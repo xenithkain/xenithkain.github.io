@@ -1,10 +1,9 @@
 import "./App.css";
 import * as THREE from "three";
-import cage from "./assets/cage.png";
-import { Canvas, useFrame, useLoader, useThree } from "@react-three/fiber";
-import { Suspense, useCallback, useMemo, useRef, FC, useState, useEffect } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Suspense, useRef, FC, useState, useEffect } from "react";
 import { Edges, useGLTF } from '@react-three/drei';
-import { BufferGeometryUtils, GLTFLoader } from "three/examples/jsm/Addons.js";
+import { BufferGeometryUtils,} from "three/examples/jsm/Addons.js";
 
 let mouseX = 0;
 let mouseY = 0;
@@ -88,7 +87,6 @@ const Phone: FC = () => {
 
   useFrame(() => {
     if (meshRef.current) {
-      let offSetY = 2;
       // Update timeRef to create a smooth oscillation
       timeRef.current += 0.01;
 
