@@ -63,7 +63,7 @@ const CameraController: FC = () => {
 
 
 const Phone: FC = () => {
-  const { nodes } = useGLTF('./phone.glb');
+  const { nodes } = useGLTF('/phone.glb');
   const [combinedGeometry, setCombinedGeometry] = useState<THREE.BufferGeometry | null>(null);
   const meshRef = useRef<THREE.Mesh>(null!);
   const timeRef = useRef(0);
@@ -119,7 +119,7 @@ const Phone: FC = () => {
 };
 
 const Table: FC = () => {
-  const { nodes } = useGLTF('./wooden_table.glb');
+  const { nodes } = useGLTF('/wooden_table.glb');
   console.log("Table", nodes);
   const meshNode = nodes['Desk_LP_01_-_Default_0'] as THREE.Mesh;
 
